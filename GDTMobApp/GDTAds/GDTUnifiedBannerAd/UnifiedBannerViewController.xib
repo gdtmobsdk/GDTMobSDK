@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UnifiedBannerViewController">
+            <connections>
+                <outlet property="animationSwitch" destination="wrK-Kv-pcr" id="A4l-nm-RLp"/>
+                <outlet property="placementIdText" destination="kGw-fO-m7Y" id="3EL-wi-ol2"/>
+                <outlet property="refreshIntervalText" destination="Nlz-cp-Z4A" id="ZFN-jq-f2v"/>
+                <outlet property="view" destination="eaS-AU-t7J" id="CgM-xv-eCH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eaS-AU-t7J">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告位id" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1b-Tx-PJ2">
+                    <rect key="frame" x="31" y="123" width="61.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1080958885885321" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kGw-fO-m7Y">
+                    <rect key="frame" x="122.5" y="115" width="221.5" height="34"/>
+                    <accessibility key="accessibilityConfiguration" identifier="unifiedBanner_pid"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0s-LK-1CL">
+                    <rect key="frame" x="46" y="617" width="62" height="30"/>
+                    <accessibility key="accessibilityConfiguration" identifier="show_ad_button"/>
+                    <state key="normal" title="展示广告"/>
+                    <connections>
+                        <action selector="loadAdAndShow:" destination="-1" eventType="touchUpInside" id="Jtw-nX-5hk"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刷新间隔" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7r-P7-g7e">
+                    <rect key="frame" x="31" y="179" width="61.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="30" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nlz-cp-Z4A">
+                    <rect key="frame" x="122.5" y="171" width="221.5" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动画" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfs-3d-sd1">
+                    <rect key="frame" x="61.5" y="228" width="31" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="rUf-MF-xlM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrK-Kv-pcr">
+                    <rect key="frame" x="122.5" y="221.5" width="51" height="31"/>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4P-Dl-FE8">
+                    <rect key="frame" x="282" y="617" width="62" height="30"/>
+                    <accessibility key="accessibilityConfiguration" identifier="remove_ad_button"/>
+                    <state key="normal" title="移除广告"/>
+                    <connections>
+                        <action selector="removeAd:" destination="-1" eventType="touchUpInside" id="Upx-Qr-Whp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kGw-fO-m7Y" firstAttribute="centerY" secondItem="N1b-Tx-PJ2" secondAttribute="centerY" id="035-C3-Yf6"/>
+                <constraint firstItem="N1b-Tx-PJ2" firstAttribute="leading" secondItem="eaS-AU-t7J" secondAttribute="leading" constant="31" id="AUx-xl-XK7"/>
+                <constraint firstAttribute="trailing" secondItem="X4P-Dl-FE8" secondAttribute="trailing" constant="31" id="Euq-HY-ymb"/>
+                <constraint firstItem="Nlz-cp-Z4A" firstAttribute="leading" secondItem="kGw-fO-m7Y" secondAttribute="leading" id="HNO-Mc-ukj"/>
+                <constraint firstItem="Nlz-cp-Z4A" firstAttribute="trailing" secondItem="kGw-fO-m7Y" secondAttribute="trailing" id="Idj-oG-AHL"/>
+                <constraint firstItem="wfs-3d-sd1" firstAttribute="top" secondItem="S7r-P7-g7e" secondAttribute="bottom" constant="31" id="Iph-9W-nk1"/>
+                <constraint firstItem="S7r-P7-g7e" firstAttribute="leading" secondItem="N1b-Tx-PJ2" secondAttribute="leading" id="L26-Nq-m6Q"/>
+                <constraint firstItem="wrK-Kv-pcr" firstAttribute="centerY" secondItem="wfs-3d-sd1" secondAttribute="centerY" id="SQu-Ul-Izn"/>
+                <constraint firstAttribute="bottom" secondItem="X4P-Dl-FE8" secondAttribute="bottom" constant="20" id="U7n-rf-7qP"/>
+                <constraint firstItem="Nlz-cp-Z4A" firstAttribute="centerY" secondItem="S7r-P7-g7e" secondAttribute="centerY" id="XCO-xf-DQB"/>
+                <constraint firstItem="Nlz-cp-Z4A" firstAttribute="top" secondItem="kGw-fO-m7Y" secondAttribute="bottom" constant="22" id="XTu-iI-BLV"/>
+                <constraint firstItem="W0s-LK-1CL" firstAttribute="leading" secondItem="eaS-AU-t7J" secondAttribute="leading" constant="46" id="YP5-Vk-0fZ"/>
+                <constraint firstAttribute="bottom" secondItem="W0s-LK-1CL" secondAttribute="bottom" constant="20" id="YyQ-66-1ke"/>
+                <constraint firstItem="kGw-fO-m7Y" firstAttribute="leading" secondItem="N1b-Tx-PJ2" secondAttribute="trailing" constant="30" id="abd-Z9-uCt"/>
+                <constraint firstItem="wfs-3d-sd1" firstAttribute="trailing" secondItem="S7r-P7-g7e" secondAttribute="trailing" id="cbb-e2-r9A"/>
+                <constraint firstItem="S7r-P7-g7e" firstAttribute="trailing" secondItem="N1b-Tx-PJ2" secondAttribute="trailing" id="cix-Cg-Om1"/>
+                <constraint firstItem="wfs-3d-sd1" firstAttribute="trailing" secondItem="S7r-P7-g7e" secondAttribute="trailing" id="cwz-h0-K5W"/>
+                <constraint firstItem="wrK-Kv-pcr" firstAttribute="leading" secondItem="Nlz-cp-Z4A" secondAttribute="leading" id="eSY-PF-dkb"/>
+                <constraint firstAttribute="trailing" secondItem="kGw-fO-m7Y" secondAttribute="trailing" constant="31" id="i7d-lS-OhD"/>
+                <constraint firstItem="kGw-fO-m7Y" firstAttribute="top" secondItem="eaS-AU-t7J" secondAttribute="top" constant="115" id="rGT-ez-nBD"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="153"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UnifiedBannerViewController" customModule="GDTMobSample_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="animationSwitch" destination="PJF-hF-tTC" id="CDO-9e-OZD"/>
+                <outlet property="placementTextField" destination="biW-al-Ttc" id="odz-Cy-w6I"/>
+                <outlet property="refreshIntervalText" destination="j3h-Ge-nvZ" id="lkN-Sr-zmK"/>
+                <outlet property="view" destination="8ma-bj-OFf" id="t05-XL-Sxf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8ma-bj-OFf">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEY-5V-Jef">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="广告位id" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG3-qw-fyV">
+                            <rect key="frame" x="24" y="152" width="63" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1080958885885321" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="biW-al-Ttc">
+                            <rect key="frame" x="117" y="145" width="227" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSh-Bj-IKS">
+                            <rect key="frame" x="38" y="386" width="128" height="30"/>
+                            <state key="normal" title="展示广告"/>
+                            <connections>
+                                <action selector="showAd:" destination="-1" eventType="touchUpInside" id="M32-LF-k2C"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAs-fy-laZ">
+                            <rect key="frame" x="216" y="386" width="128" height="30"/>
+                            <state key="normal" title="移除广告"/>
+                            <connections>
+                                <action selector="removeAd:" destination="-1" eventType="touchUpInside" id="47B-28-CRW"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="30" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j3h-Ge-nvZ">
+                            <rect key="frame" x="117" y="201" width="227" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PJF-hF-tTC">
+                            <rect key="frame" x="117" y="252" width="49" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="动画" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0b-tL-4XV">
+                            <rect key="frame" x="34" y="257" width="35" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="刷新间隔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTR-09-z2w">
+                            <rect key="frame" x="24" y="208" width="70" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="pAs-fy-laZ" firstAttribute="height" secondItem="tSh-Bj-IKS" secondAttribute="height" id="1bM-DT-Eqg"/>
+                        <constraint firstItem="biW-al-Ttc" firstAttribute="top" secondItem="mEY-5V-Jef" secondAttribute="top" constant="145" id="5R7-XG-jjq"/>
+                        <constraint firstItem="tSh-Bj-IKS" firstAttribute="leading" secondItem="mEY-5V-Jef" secondAttribute="leading" constant="38" id="EGl-af-68k"/>
+                        <constraint firstAttribute="bottom" secondItem="tSh-Bj-IKS" secondAttribute="bottom" constant="251" id="MGe-Nk-Lzk"/>
+                        <constraint firstItem="pAs-fy-laZ" firstAttribute="width" secondItem="tSh-Bj-IKS" secondAttribute="width" id="Pt2-vP-dsR"/>
+                        <constraint firstItem="biW-al-Ttc" firstAttribute="leading" secondItem="nG3-qw-fyV" secondAttribute="trailing" constant="30" id="Ws8-9Q-MZG"/>
+                        <constraint firstItem="nG3-qw-fyV" firstAttribute="leading" secondItem="mEY-5V-Jef" secondAttribute="leading" constant="24" id="bCo-ZT-dKD"/>
+                        <constraint firstAttribute="trailing" secondItem="pAs-fy-laZ" secondAttribute="trailing" constant="31" id="hjM-Kj-7kU"/>
+                        <constraint firstItem="pAs-fy-laZ" firstAttribute="leading" secondItem="tSh-Bj-IKS" secondAttribute="trailing" constant="50" id="m53-S2-TS7"/>
+                        <constraint firstItem="pAs-fy-laZ" firstAttribute="centerY" secondItem="tSh-Bj-IKS" secondAttribute="centerY" id="nY5-n7-Szf"/>
+                        <constraint firstAttribute="trailing" secondItem="biW-al-Ttc" secondAttribute="trailing" constant="31" id="ocD-7Z-XQ8"/>
+                        <constraint firstItem="biW-al-Ttc" firstAttribute="centerY" secondItem="nG3-qw-fyV" secondAttribute="centerY" id="ws7-fH-all"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mEY-5V-Jef" firstAttribute="leading" secondItem="8ma-bj-OFf" secondAttribute="leading" id="6cb-vC-kDO"/>
+                <constraint firstAttribute="bottom" secondItem="mEY-5V-Jef" secondAttribute="bottom" id="I8x-rd-Pze"/>
+                <constraint firstItem="mEY-5V-Jef" firstAttribute="top" secondItem="8ma-bj-OFf" secondAttribute="top" id="Y3x-PI-ckX"/>
+                <constraint firstAttribute="trailing" secondItem="mEY-5V-Jef" secondAttribute="trailing" id="tr2-tb-wn3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Oh3-gg-Dlx"/>
+            <point key="canvasLocation" x="32.799999999999997" y="52.623688155922046"/>
+        </view>
+    </objects>
+</document>

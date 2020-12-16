@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3BED88C8212FDBE800BA176F /* dailybuild */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3BED88C9212FDBE800BA176F /* Build configuration list for PBXAggregateTarget "dailybuild" */;
+			buildPhases = (
+				3BED88CD212FDC0100BA176F /* ShellScript */,
+			);
+			dependencies = (
+				3B247F9C213400CE009B70F4 /* PBXTargetDependency */,
+			);
+			name = dailybuild;
+			productName = dailybuildipa;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0A1CAF0C22339C5E003D4D9A /* HybridAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CAF0B22339C5E003D4D9A /* HybridAdViewController.swift */; };
+		0A1CAF0E22339C76003D4D9A /* HybridAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CAF0D22339C76003D4D9A /* HybridAdViewController.xib */; };
+		0A6A32A32174D06E00CB6F34 /* RewardVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A32A12174D06E00CB6F34 /* RewardVideoViewController.swift */; };
+		3B19B7C72126BC8F00E9EBC5 /* GDTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B19B7C62126BC8F00E9EBC5 /* GDTNavigationController.swift */; };
+		3B19B7CF212D053100E9EBC5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B19B7CE212D053100E9EBC5 /* Constant.swift */; };
+		3B19B7D1212D055200E9EBC5 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B19B7D0212D055200E9EBC5 /* Util.swift */; };
+		3B19B7DF212D68CA00E9EBC5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7DE212D68CA00E9EBC5 /* AdSupport.framework */; };
+		3B19B7E1212D68D200E9EBC5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7E0212D68D200E9EBC5 /* CoreLocation.framework */; };
+		3B19B7E3212D68E300E9EBC5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7E2212D68E300E9EBC5 /* QuartzCore.framework */; };
+		3B19B7E5212D68FA00E9EBC5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7E4212D68FA00E9EBC5 /* SystemConfiguration.framework */; };
+		3B19B7E7212D690000E9EBC5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7E6212D690000E9EBC5 /* CoreTelephony.framework */; };
+		3B19B7E9212D690B00E9EBC5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7E8212D690B00E9EBC5 /* libz.tbd */; };
+		3B19B7EB212D691300E9EBC5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7EA212D691300E9EBC5 /* Security.framework */; };
+		3B19B7ED212D691B00E9EBC5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7EC212D691B00E9EBC5 /* StoreKit.framework */; };
+		3B19B7EF212D692400E9EBC5 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7EE212D692400E9EBC5 /* libxml2.tbd */; };
+		3B19B7F1212D692B00E9EBC5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7F0212D692B00E9EBC5 /* AVFoundation.framework */; };
+		3B19B7F3212D693000E9EBC5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19B7F2212D693000E9EBC5 /* WebKit.framework */; };
+		3B895A56224076FC00B81BCC /* UnifiedInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B895A54224076FC00B81BCC /* UnifiedInterstitialViewController.swift */; };
+		3B895A5B22407AC000B81BCC /* UnifiedBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B895A5922407AC000B81BCC /* UnifiedBannerViewController.swift */; };
+		3B895A5C22407AC000B81BCC /* UnifiedBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B895A5A22407AC000B81BCC /* UnifiedBannerViewController.xib */; };
+		3BC2AD1C2122E3A0009BD5FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2AD1B2122E3A0009BD5FD /* AppDelegate.swift */; };
+		3BC2AD1E2122E3A0009BD5FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2AD1D2122E3A0009BD5FD /* ViewController.swift */; };
+		3BC2AD212122E3A0009BD5FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2AD1F2122E3A0009BD5FD /* Main.storyboard */; };
+		3BC2AD232122E3A1009BD5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2AD222122E3A1009BD5FD /* Assets.xcassets */; };
+		3BC2AD262122E3A1009BD5FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2AD242122E3A1009BD5FD /* LaunchScreen.storyboard */; };
+		3BD7B381212D88E100E1744B /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD7B380212D88E100E1744B /* libGDTMobSDK.a */; };
+		3BDAC71521EC933700BC0B34 /* UnifiedNativeAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BDAC71021EC933700BC0B34 /* UnifiedNativeAdViewController.xib */; };
+		3BDAC71621EC933700BC0B34 /* UnifiedNativeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAC71121EC933700BC0B34 /* UnifiedNativeAdViewController.swift */; };
+		3BE4C0B52124313000D9F2D1 /* NativeExpressAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE4C0B32124313000D9F2D1 /* NativeExpressAdViewController.swift */; };
+		3BE4C0BA2124320000D9F2D1 /* NativeExpressVideoAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE4C0B82124320000D9F2D1 /* NativeExpressVideoAdViewController.swift */; };
+		3BE4C0C42124329100D9F2D1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE4C0C22124329100D9F2D1 /* SplashViewController.swift */; };
+		3BE4C0C52124329100D9F2D1 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BE4C0C32124329100D9F2D1 /* SplashViewController.xib */; };
+		ACD62BEB23669B8F00D8CC51 /* UnifiedNativeAdCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62BEA23669B8F00D8CC51 /* UnifiedNativeAdCustomView.swift */; };
+		ACD62BF12366A73C00D8CC51 /* UnifiedNativeAdBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62BF02366A73C00D8CC51 /* UnifiedNativeAdBaseViewController.swift */; };
+		ACD62BF32366BEB000D8CC51 /* UnifiedNativeAdFeedVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62BF22366BEB000D8CC51 /* UnifiedNativeAdFeedVideoTableViewController.swift */; };
+		ACD62BF52366BEBE00D8CC51 /* UnifiedNativeAdFeedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62BF42366BEBE00D8CC51 /* UnifiedNativeAdFeedImageViewController.swift */; };
+		ACD62BF72366BECF00D8CC51 /* UnifiedNativeAdPortraitVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62BF62366BECF00D8CC51 /* UnifiedNativeAdPortraitVideoViewController.swift */; };
+		ACD62BF92366BED900D8CC51 /* UnifiedNativeAdPortraitFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62BF82366BED800D8CC51 /* UnifiedNativeAdPortraitFeedViewController.swift */; };
+		ACD62BFB2366BEE300D8CC51 /* UnifiedNativePreVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62BFA2366BEE300D8CC51 /* UnifiedNativePreVideoViewController.swift */; };
+		ACD62BFF2366BF7D00D8CC51 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62BFE2366BF7D00D8CC51 /* UIViewController+Extension.swift */; };
+		ACD62C012366E36300D8CC51 /* UnifiedNativeAdThreeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62C002366E36300D8CC51 /* UnifiedNativeAdThreeImageCell.swift */; };
+		ACD62C032366E58600D8CC51 /* UnifiedNativeAdBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62C022366E58600D8CC51 /* UnifiedNativeAdBaseTableViewCell.swift */; };
+		ACD62C052366EBBB00D8CC51 /* UnifiedNativeAdImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62C042366EBBB00D8CC51 /* UnifiedNativeAdImageCell.swift */; };
+		ACD62C0723680EC700D8CC51 /* UnifiedNativeAdFeedVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62C0623680EC700D8CC51 /* UnifiedNativeAdFeedVideoCell.swift */; };
+		ACD62C0923681F8D00D8CC51 /* UnifiedNativePortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62C0823681F8D00D8CC51 /* UnifiedNativePortraitCollectionViewCell.swift */; };
+		ACD62C0B236827AA00D8CC51 /* UnifiedNativeAdPortraitVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62C0A236827AA00D8CC51 /* UnifiedNativeAdPortraitVideoTableViewCell.swift */; };
+		ACD62C0D2368339400D8CC51 /* UnifiedNativeAdPortraitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62C0C2368339400D8CC51 /* UnifiedNativeAdPortraitDetailViewController.swift */; };
+		ACD62C0F236930CF00D8CC51 /* DemoPlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62C0E236930CF00D8CC51 /* DemoPlayerTableViewCell.swift */; };
+		E62E8B94245BF3CC0032D2FC /* NativeExpressAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62E8B93245BF3CC0032D2FC /* NativeExpressAdViewController.xib */; };
+		E631A673245859240007612A /* UnifiedInterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631A671245859240007612A /* UnifiedInterstitialViewController.xib */; };
+		E631A68B24591CA20007612A /* UnifiedInterstitialFullScreenVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631A68A24591CA20007612A /* UnifiedInterstitialFullScreenVideoViewController.swift */; };
+		E631A68F24591EE30007612A /* UnifiedInterstitialFullScreenVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631A68E24591EE20007612A /* UnifiedInterstitialFullScreenVideoViewController.xib */; };
+		E631A693245955520007612A /* RewardVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631A692245955520007612A /* RewardVideoViewController.xib */; };
+		E63855B1245C459300D7BAFC /* NativeExpressVideoAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62E8B8F245BE63D0032D2FC /* NativeExpressVideoAdViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B247F9B213400CE009B70F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC2AD102122E3A0009BD5FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC2AD172122E3A0009BD5FD;
+			remoteInfo = "GDTMobSample-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A1CAEFF22336F9A003D4D9A /* GDTHybridAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTHybridAd.h; sourceTree = "<group>"; };
+		0A1CAF0B22339C5E003D4D9A /* HybridAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridAdViewController.swift; sourceTree = "<group>"; };
+		0A1CAF0D22339C76003D4D9A /* HybridAdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HybridAdViewController.xib; sourceTree = "<group>"; };
+		0A6A32A12174D06E00CB6F34 /* RewardVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardVideoViewController.swift; sourceTree = "<group>"; };
+		0A6A32B12174D24400CB6F34 /* GDTRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTRewardVideoAd.h; sourceTree = "<group>"; };
+		0AF51FAF231FB23400245A69 /* GDTVideoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTVideoConfig.h; sourceTree = "<group>"; };
+		0AF51FB0231FB23400245A69 /* GDTBaseAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTBaseAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		0AF51FB1231FB23400245A69 /* GDTRewardVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTRewardVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		0AF51FB2231FB23400245A69 /* GDTRewardVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTRewardVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		3B19B7C62126BC8F00E9EBC5 /* GDTNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDTNavigationController.swift; sourceTree = "<group>"; };
+		3B19B7CE212D053100E9EBC5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3B19B7D0212D055200E9EBC5 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		3B19B7DE212D68CA00E9EBC5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3B19B7E0212D68D200E9EBC5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3B19B7E2212D68E300E9EBC5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3B19B7E4212D68FA00E9EBC5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3B19B7E6212D690000E9EBC5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3B19B7E8212D690B00E9EBC5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3B19B7EA212D691300E9EBC5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3B19B7EC212D691B00E9EBC5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3B19B7EE212D692400E9EBC5 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		3B19B7F0212D692B00E9EBC5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3B19B7F2212D693000E9EBC5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3B895A4B223CE71B00B81BCC /* GDTUnifiedBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTUnifiedBannerView.h; sourceTree = "<group>"; };
+		3B895A4C223CE71B00B81BCC /* GDTUnifiedInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTUnifiedInterstitialAd.h; sourceTree = "<group>"; };
+		3B895A54224076FC00B81BCC /* UnifiedInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedInterstitialViewController.swift; sourceTree = "<group>"; };
+		3B895A5922407AC000B81BCC /* UnifiedBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedBannerViewController.swift; sourceTree = "<group>"; };
+		3B895A5A22407AC000B81BCC /* UnifiedBannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnifiedBannerViewController.xib; sourceTree = "<group>"; };
+		3BC2AD182122E3A0009BD5FD /* GDTMobSample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GDTMobSample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC2AD1B2122E3A0009BD5FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BC2AD1D2122E3A0009BD5FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BC2AD202122E3A0009BD5FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BC2AD222122E3A1009BD5FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BC2AD252122E3A1009BD5FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BC2AD272122E3A1009BD5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BD7B378212D88E100E1744B /* GDTNativeExpressAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeExpressAdView.h; sourceTree = "<group>"; };
+		3BD7B379212D88E100E1744B /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobBannerView.h; sourceTree = "<group>"; };
+		3BD7B37B212D88E100E1744B /* GDTSDKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTSDKConfig.h; sourceTree = "<group>"; };
+		3BD7B37C212D88E100E1744B /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobInterstitial.h; sourceTree = "<group>"; };
+		3BD7B37D212D88E100E1744B /* GDTSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTSplashAd.h; sourceTree = "<group>"; };
+		3BD7B37E212D88E100E1744B /* GDTNativeExpressAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeExpressAd.h; sourceTree = "<group>"; };
+		3BD7B37F212D88E100E1744B /* GDTSDKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTSDKDefines.h; sourceTree = "<group>"; };
+		3BD7B380212D88E100E1744B /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGDTMobSDK.a; sourceTree = "<group>"; };
+		3BDAC70A21EC931D00BC0B34 /* GDTMediaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMediaView.h; sourceTree = "<group>"; };
+		3BDAC70B21EC931D00BC0B34 /* GDTUnifiedNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTUnifiedNativeAd.h; sourceTree = "<group>"; };
+		3BDAC70C21EC931D00BC0B34 /* GDTLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTLogoView.h; sourceTree = "<group>"; };
+		3BDAC70D21EC931D00BC0B34 /* GDTUnifiedNativeAdDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTUnifiedNativeAdDataObject.h; sourceTree = "<group>"; };
+		3BDAC70E21EC931D00BC0B34 /* GDTUnifiedNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTUnifiedNativeAdView.h; sourceTree = "<group>"; };
+		3BDAC71021EC933700BC0B34 /* UnifiedNativeAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnifiedNativeAdViewController.xib; sourceTree = "<group>"; };
+		3BDAC71121EC933700BC0B34 /* UnifiedNativeAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdViewController.swift; sourceTree = "<group>"; };
+		3BE4C09821241A2C00D9F2D1 /* GDTMobSample-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDTMobSample-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		3BE4C0B32124313000D9F2D1 /* NativeExpressAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeExpressAdViewController.swift; sourceTree = "<group>"; };
+		3BE4C0B82124320000D9F2D1 /* NativeExpressVideoAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeExpressVideoAdViewController.swift; sourceTree = "<group>"; };
+		3BE4C0C22124329100D9F2D1 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3BE4C0C32124329100D9F2D1 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		ACD62BEA23669B8F00D8CC51 /* UnifiedNativeAdCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdCustomView.swift; sourceTree = "<group>"; };
+		ACD62BF02366A73C00D8CC51 /* UnifiedNativeAdBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdBaseViewController.swift; sourceTree = "<group>"; };
+		ACD62BF22366BEB000D8CC51 /* UnifiedNativeAdFeedVideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdFeedVideoTableViewController.swift; sourceTree = "<group>"; };
+		ACD62BF42366BEBE00D8CC51 /* UnifiedNativeAdFeedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdFeedImageViewController.swift; sourceTree = "<group>"; };
+		ACD62BF62366BECF00D8CC51 /* UnifiedNativeAdPortraitVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdPortraitVideoViewController.swift; sourceTree = "<group>"; };
+		ACD62BF82366BED800D8CC51 /* UnifiedNativeAdPortraitFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdPortraitFeedViewController.swift; sourceTree = "<group>"; };
+		ACD62BFA2366BEE300D8CC51 /* UnifiedNativePreVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativePreVideoViewController.swift; sourceTree = "<group>"; };
+		ACD62BFE2366BF7D00D8CC51 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		ACD62C002366E36300D8CC51 /* UnifiedNativeAdThreeImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdThreeImageCell.swift; sourceTree = "<group>"; };
+		ACD62C022366E58600D8CC51 /* UnifiedNativeAdBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdBaseTableViewCell.swift; sourceTree = "<group>"; };
+		ACD62C042366EBBB00D8CC51 /* UnifiedNativeAdImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdImageCell.swift; sourceTree = "<group>"; };
+		ACD62C0623680EC700D8CC51 /* UnifiedNativeAdFeedVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdFeedVideoCell.swift; sourceTree = "<group>"; };
+		ACD62C0823681F8D00D8CC51 /* UnifiedNativePortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativePortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		ACD62C0A236827AA00D8CC51 /* UnifiedNativeAdPortraitVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdPortraitVideoTableViewCell.swift; sourceTree = "<group>"; };
+		ACD62C0C2368339400D8CC51 /* UnifiedNativeAdPortraitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedNativeAdPortraitDetailViewController.swift; sourceTree = "<group>"; };
+		ACD62C0E236930CF00D8CC51 /* DemoPlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPlayerTableViewCell.swift; sourceTree = "<group>"; };
+		E62E8B8F245BE63D0032D2FC /* NativeExpressVideoAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeExpressVideoAdViewController.xib; sourceTree = "<group>"; };
+		E62E8B93245BF3CC0032D2FC /* NativeExpressAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeExpressAdViewController.xib; sourceTree = "<group>"; };
+		E631A671245859240007612A /* UnifiedInterstitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnifiedInterstitialViewController.xib; sourceTree = "<group>"; };
+		E631A68A24591CA20007612A /* UnifiedInterstitialFullScreenVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnifiedInterstitialFullScreenVideoViewController.swift; sourceTree = "<group>"; };
+		E631A68E24591EE20007612A /* UnifiedInterstitialFullScreenVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnifiedInterstitialFullScreenVideoViewController.xib; sourceTree = "<group>"; };
+		E631A692245955520007612A /* RewardVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewardVideoViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BC2AD152122E3A0009BD5FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B19B7F3212D693000E9EBC5 /* WebKit.framework in Frameworks */,
+				3B19B7F1212D692B00E9EBC5 /* AVFoundation.framework in Frameworks */,
+				3B19B7EF212D692400E9EBC5 /* libxml2.tbd in Frameworks */,
+				3B19B7ED212D691B00E9EBC5 /* StoreKit.framework in Frameworks */,
+				3B19B7EB212D691300E9EBC5 /* Security.framework in Frameworks */,
+				3B19B7E9212D690B00E9EBC5 /* libz.tbd in Frameworks */,
+				3B19B7E7212D690000E9EBC5 /* CoreTelephony.framework in Frameworks */,
+				3B19B7E5212D68FA00E9EBC5 /* SystemConfiguration.framework in Frameworks */,
+				3B19B7E3212D68E300E9EBC5 /* QuartzCore.framework in Frameworks */,
+				3B19B7E1212D68D200E9EBC5 /* CoreLocation.framework in Frameworks */,
+				3B19B7DF212D68CA00E9EBC5 /* AdSupport.framework in Frameworks */,
+				3BD7B381212D88E100E1744B /* libGDTMobSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1CAF0A22339C42003D4D9A /* HybridAdViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CAF0B22339C5E003D4D9A /* HybridAdViewController.swift */,
+				0A1CAF0D22339C76003D4D9A /* HybridAdViewController.xib */,
+			);
+			path = HybridAdViewController;
+			sourceTree = "<group>";
+		};
+		0A6A32A02174CFBD00CB6F34 /* RewardVideoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A32A12174D06E00CB6F34 /* RewardVideoViewController.swift */,
+				E631A692245955520007612A /* RewardVideoViewController.xib */,
+			);
+			path = RewardVideoViewController;
+			sourceTree = "<group>";
+		};
+		3B19B7DD212D68C900E9EBC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B19B7F2212D693000E9EBC5 /* WebKit.framework */,
+				3B19B7F0212D692B00E9EBC5 /* AVFoundation.framework */,
+				3B19B7EE212D692400E9EBC5 /* libxml2.tbd */,
+				3B19B7EC212D691B00E9EBC5 /* StoreKit.framework */,
+				3B19B7EA212D691300E9EBC5 /* Security.framework */,
+				3B19B7E8212D690B00E9EBC5 /* libz.tbd */,
+				3B19B7E6212D690000E9EBC5 /* CoreTelephony.framework */,
+				3B19B7E4212D68FA00E9EBC5 /* SystemConfiguration.framework */,
+				3B19B7E2212D68E300E9EBC5 /* QuartzCore.framework */,
+				3B19B7E0212D68D200E9EBC5 /* CoreLocation.framework */,
+				3B19B7DE212D68CA00E9EBC5 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B895A53224076D700B81BCC /* UnifiedInterstitialViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E631A671245859240007612A /* UnifiedInterstitialViewController.xib */,
+				3B895A54224076FC00B81BCC /* UnifiedInterstitialViewController.swift */,
+			);
+			path = UnifiedInterstitialViewController;
+			sourceTree = "<group>";
+		};
+		3B895A5822407AAF00B81BCC /* UnifiedBannerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B895A5922407AC000B81BCC /* UnifiedBannerViewController.swift */,
+				3B895A5A22407AC000B81BCC /* UnifiedBannerViewController.xib */,
+			);
+			path = UnifiedBannerViewController;
+			sourceTree = "<group>";
+		};
+		3BC2AD0F2122E3A0009BD5FD = {
+			isa = PBXGroup;
+			children = (
+				3BC2AD1A2122E3A0009BD5FD /* GDTMobSample-Swift */,
+				3BC2AD192122E3A0009BD5FD /* Products */,
+				3B19B7DD212D68C900E9EBC5 /* Frameworks */,
+				3BD7B377212D88E100E1744B /* lib */,
+			);
+			sourceTree = "<group>";
+		};
+		3BC2AD192122E3A0009BD5FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BC2AD182122E3A0009BD5FD /* GDTMobSample-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BC2AD1A2122E3A0009BD5FD /* GDTMobSample-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3BE4C0A3212428BA00D9F2D1 /* GDTAdTypes */,
+				3BC2AD1B2122E3A0009BD5FD /* AppDelegate.swift */,
+				3BC2AD1D2122E3A0009BD5FD /* ViewController.swift */,
+				3B19B7C62126BC8F00E9EBC5 /* GDTNavigationController.swift */,
+				3BE4C09821241A2C00D9F2D1 /* GDTMobSample-Swift-Bridging-Header.h */,
+				3BC2AD1F2122E3A0009BD5FD /* Main.storyboard */,
+				3BC2AD222122E3A1009BD5FD /* Assets.xcassets */,
+				3BC2AD242122E3A1009BD5FD /* LaunchScreen.storyboard */,
+				3BC2AD272122E3A1009BD5FD /* Info.plist */,
+				3B19B7CE212D053100E9EBC5 /* Constant.swift */,
+				3B19B7D0212D055200E9EBC5 /* Util.swift */,
+			);
+			path = "GDTMobSample-Swift";
+			sourceTree = "<group>";
+		};
+		3BD7B377212D88E100E1744B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0AF51FB0231FB23400245A69 /* GDTBaseAdNetworkAdapterProtocol.h */,
+				0AF51FB2231FB23400245A69 /* GDTRewardVideoAdNetworkAdapterProtocol.h */,
+				0AF51FB1231FB23400245A69 /* GDTRewardVideoAdNetworkConnectorProtocol.h */,
+				0AF51FAF231FB23400245A69 /* GDTVideoConfig.h */,
+				3B895A4B223CE71B00B81BCC /* GDTUnifiedBannerView.h */,
+				3B895A4C223CE71B00B81BCC /* GDTUnifiedInterstitialAd.h */,
+				0A1CAEFF22336F9A003D4D9A /* GDTHybridAd.h */,
+				3BDAC70C21EC931D00BC0B34 /* GDTLogoView.h */,
+				3BDAC70A21EC931D00BC0B34 /* GDTMediaView.h */,
+				3BDAC70B21EC931D00BC0B34 /* GDTUnifiedNativeAd.h */,
+				3BDAC70D21EC931D00BC0B34 /* GDTUnifiedNativeAdDataObject.h */,
+				3BDAC70E21EC931D00BC0B34 /* GDTUnifiedNativeAdView.h */,
+				0A6A32B12174D24400CB6F34 /* GDTRewardVideoAd.h */,
+				3BD7B378212D88E100E1744B /* GDTNativeExpressAdView.h */,
+				3BD7B379212D88E100E1744B /* GDTMobBannerView.h */,
+				3BD7B37B212D88E100E1744B /* GDTSDKConfig.h */,
+				3BD7B37C212D88E100E1744B /* GDTMobInterstitial.h */,
+				3BD7B37D212D88E100E1744B /* GDTSplashAd.h */,
+				3BD7B37E212D88E100E1744B /* GDTNativeExpressAd.h */,
+				3BD7B37F212D88E100E1744B /* GDTSDKDefines.h */,
+				3BD7B380212D88E100E1744B /* libGDTMobSDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		3BDAC70F21EC933700BC0B34 /* UnifiedNativeAdViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3BDAC71021EC933700BC0B34 /* UnifiedNativeAdViewController.xib */,
+				3BDAC71121EC933700BC0B34 /* UnifiedNativeAdViewController.swift */,
+				ACD62BEA23669B8F00D8CC51 /* UnifiedNativeAdCustomView.swift */,
+				ACD62BEE2366A5B500D8CC51 /* ViewController */,
+				ACD62BEF2366A5CF00D8CC51 /* cell */,
+				ACD62BFE2366BF7D00D8CC51 /* UIViewController+Extension.swift */,
+			);
+			path = UnifiedNativeAdViewController;
+			sourceTree = "<group>";
+		};
+		3BE4C0A3212428BA00D9F2D1 /* GDTAdTypes */ = {
+			isa = PBXGroup;
+			children = (
+				E631A68924591C930007612A /* UnfiedInterstitialFullScreenVideoViewController */,
+				3B895A5822407AAF00B81BCC /* UnifiedBannerViewController */,
+				3B895A53224076D700B81BCC /* UnifiedInterstitialViewController */,
+				0A1CAF0A22339C42003D4D9A /* HybridAdViewController */,
+				3BDAC70F21EC933700BC0B34 /* UnifiedNativeAdViewController */,
+				0A6A32A02174CFBD00CB6F34 /* RewardVideoViewController */,
+				3BE4C0C12124327000D9F2D1 /* SplashViewController */,
+				3BE4C0B7212431D500D9F2D1 /* NativeExpressVideoAdViewController */,
+				3BE4C0B22124310A00D9F2D1 /* NativeExpressAdViewController */,
+			);
+			path = GDTAdTypes;
+			sourceTree = "<group>";
+		};
+		3BE4C0B22124310A00D9F2D1 /* NativeExpressAdViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E62E8B93245BF3CC0032D2FC /* NativeExpressAdViewController.xib */,
+				3BE4C0B32124313000D9F2D1 /* NativeExpressAdViewController.swift */,
+			);
+			path = NativeExpressAdViewController;
+			sourceTree = "<group>";
+		};
+		3BE4C0B7212431D500D9F2D1 /* NativeExpressVideoAdViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E62E8B8F245BE63D0032D2FC /* NativeExpressVideoAdViewController.xib */,
+				3BE4C0B82124320000D9F2D1 /* NativeExpressVideoAdViewController.swift */,
+			);
+			path = NativeExpressVideoAdViewController;
+			sourceTree = "<group>";
+		};
+		3BE4C0C12124327000D9F2D1 /* SplashViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3BE4C0C22124329100D9F2D1 /* SplashViewController.swift */,
+				3BE4C0C32124329100D9F2D1 /* SplashViewController.xib */,
+			);
+			path = SplashViewController;
+			sourceTree = "<group>";
+		};
+		ACD62BEE2366A5B500D8CC51 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACD62BF02366A73C00D8CC51 /* UnifiedNativeAdBaseViewController.swift */,
+				ACD62BF42366BEBE00D8CC51 /* UnifiedNativeAdFeedImageViewController.swift */,
+				ACD62BF22366BEB000D8CC51 /* UnifiedNativeAdFeedVideoTableViewController.swift */,
+				ACD62BF62366BECF00D8CC51 /* UnifiedNativeAdPortraitVideoViewController.swift */,
+				ACD62BF82366BED800D8CC51 /* UnifiedNativeAdPortraitFeedViewController.swift */,
+				ACD62BFA2366BEE300D8CC51 /* UnifiedNativePreVideoViewController.swift */,
+				ACD62C0C2368339400D8CC51 /* UnifiedNativeAdPortraitDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ACD62BEF2366A5CF00D8CC51 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				ACD62C022366E58600D8CC51 /* UnifiedNativeAdBaseTableViewCell.swift */,
+				ACD62C042366EBBB00D8CC51 /* UnifiedNativeAdImageCell.swift */,
+				ACD62C002366E36300D8CC51 /* UnifiedNativeAdThreeImageCell.swift */,
+				ACD62C0623680EC700D8CC51 /* UnifiedNativeAdFeedVideoCell.swift */,
+				ACD62C0823681F8D00D8CC51 /* UnifiedNativePortraitCollectionViewCell.swift */,
+				ACD62C0A236827AA00D8CC51 /* UnifiedNativeAdPortraitVideoTableViewCell.swift */,
+				ACD62C0E236930CF00D8CC51 /* DemoPlayerTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E631A68924591C930007612A /* UnfiedInterstitialFullScreenVideoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E631A68E24591EE20007612A /* UnifiedInterstitialFullScreenVideoViewController.xib */,
+				E631A68A24591CA20007612A /* UnifiedInterstitialFullScreenVideoViewController.swift */,
+			);
+			path = UnfiedInterstitialFullScreenVideoViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BC2AD172122E3A0009BD5FD /* GDTMobSample-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC2AD2A2122E3A1009BD5FD /* Build configuration list for PBXNativeTarget "GDTMobSample-Swift" */;
+			buildPhases = (
+				3BC2AD142122E3A0009BD5FD /* Sources */,
+				3BC2AD152122E3A0009BD5FD /* Frameworks */,
+				3BC2AD162122E3A0009BD5FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GDTMobSample-Swift";
+			productName = "GDTMobSample-Swift";
+			productReference = 3BC2AD182122E3A0009BD5FD /* GDTMobSample-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BC2AD102122E3A0009BD5FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Tencent;
+				TargetAttributes = {
+					3BC2AD172122E3A0009BD5FD = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					3BED88C8212FDBE800BA176F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 3BC2AD132122E3A0009BD5FD /* Build configuration list for PBXProject "GDTMobSample-Swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BC2AD0F2122E3A0009BD5FD;
+			productRefGroup = 3BC2AD192122E3A0009BD5FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BC2AD172122E3A0009BD5FD /* GDTMobSample-Swift */,
+				3BED88C8212FDBE800BA176F /* dailybuild */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BC2AD162122E3A0009BD5FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63855B1245C459300D7BAFC /* NativeExpressVideoAdViewController.xib in Resources */,
+				3BDAC71521EC933700BC0B34 /* UnifiedNativeAdViewController.xib in Resources */,
+				0A1CAF0E22339C76003D4D9A /* HybridAdViewController.xib in Resources */,
+				3BC2AD262122E3A1009BD5FD /* LaunchScreen.storyboard in Resources */,
+				3BE4C0C52124329100D9F2D1 /* SplashViewController.xib in Resources */,
+				3BC2AD232122E3A1009BD5FD /* Assets.xcassets in Resources */,
+				E631A693245955520007612A /* RewardVideoViewController.xib in Resources */,
+				3BC2AD212122E3A0009BD5FD /* Main.storyboard in Resources */,
+				E62E8B94245BF3CC0032D2FC /* NativeExpressAdViewController.xib in Resources */,
+				E631A68F24591EE30007612A /* UnifiedInterstitialFullScreenVideoViewController.xib in Resources */,
+				E631A673245859240007612A /* UnifiedInterstitialViewController.xib in Resources */,
+				3B895A5C22407AC000B81BCC /* UnifiedBannerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BED88CD212FDC0100BA176F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# compress application.\n\n/bin/rm -rf $CONFIGURATION_BUILD_DIR/Payload\n/bin/mkdir $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/cp -R $CONFIGURATION_BUILD_DIR/GDTMobSample-Swift.app $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/cp images/logo_itunes.png $CONFIGURATION_BUILD_DIR/iTunesArtwork\n\ncd $CONFIGURATION_BUILD_DIR\n\n/usr/bin/zip -r GDTMobSample-Swift.ipa Payload iTunesArtwork";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BC2AD142122E3A0009BD5FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B19B7D1212D055200E9EBC5 /* Util.swift in Sources */,
+				0A6A32A32174D06E00CB6F34 /* RewardVideoViewController.swift in Sources */,
+				ACD62BF32366BEB000D8CC51 /* UnifiedNativeAdFeedVideoTableViewController.swift in Sources */,
+				ACD62C0D2368339400D8CC51 /* UnifiedNativeAdPortraitDetailViewController.swift in Sources */,
+				ACD62BF52366BEBE00D8CC51 /* UnifiedNativeAdFeedImageViewController.swift in Sources */,
+				ACD62C0F236930CF00D8CC51 /* DemoPlayerTableViewCell.swift in Sources */,
+				ACD62BF12366A73C00D8CC51 /* UnifiedNativeAdBaseViewController.swift in Sources */,
+				3B895A56224076FC00B81BCC /* UnifiedInterstitialViewController.swift in Sources */,
+				ACD62BEB23669B8F00D8CC51 /* UnifiedNativeAdCustomView.swift in Sources */,
+				ACD62C052366EBBB00D8CC51 /* UnifiedNativeAdImageCell.swift in Sources */,
+				3BC2AD1E2122E3A0009BD5FD /* ViewController.swift in Sources */,
+				3BE4C0B52124313000D9F2D1 /* NativeExpressAdViewController.swift in Sources */,
+				3BC2AD1C2122E3A0009BD5FD /* AppDelegate.swift in Sources */,
+				ACD62BFF2366BF7D00D8CC51 /* UIViewController+Extension.swift in Sources */,
+				ACD62C0B236827AA00D8CC51 /* UnifiedNativeAdPortraitVideoTableViewCell.swift in Sources */,
+				3BDAC71621EC933700BC0B34 /* UnifiedNativeAdViewController.swift in Sources */,
+				ACD62C032366E58600D8CC51 /* UnifiedNativeAdBaseTableViewCell.swift in Sources */,
+				ACD62BF72366BECF00D8CC51 /* UnifiedNativeAdPortraitVideoViewController.swift in Sources */,
+				3BE4C0BA2124320000D9F2D1 /* NativeExpressVideoAdViewController.swift in Sources */,
+				3B895A5B22407AC000B81BCC /* UnifiedBannerViewController.swift in Sources */,
+				ACD62C0923681F8D00D8CC51 /* UnifiedNativePortraitCollectionViewCell.swift in Sources */,
+				ACD62C012366E36300D8CC51 /* UnifiedNativeAdThreeImageCell.swift in Sources */,
+				ACD62C0723680EC700D8CC51 /* UnifiedNativeAdFeedVideoCell.swift in Sources */,
+				3B19B7CF212D053100E9EBC5 /* Constant.swift in Sources */,
+				ACD62BF92366BED900D8CC51 /* UnifiedNativeAdPortraitFeedViewController.swift in Sources */,
+				ACD62BFB2366BEE300D8CC51 /* UnifiedNativePreVideoViewController.swift in Sources */,
+				E631A68B24591CA20007612A /* UnifiedInterstitialFullScreenVideoViewController.swift in Sources */,
+				0A1CAF0C22339C5E003D4D9A /* HybridAdViewController.swift in Sources */,
+				3B19B7C72126BC8F00E9EBC5 /* GDTNavigationController.swift in Sources */,
+				3BE4C0C42124329100D9F2D1 /* SplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B247F9C213400CE009B70F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC2AD172122E3A0009BD5FD /* GDTMobSample-Swift */;
+			targetProxy = 3B247F9B213400CE009B70F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BC2AD1F2122E3A0009BD5FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BC2AD202122E3A0009BD5FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BC2AD242122E3A1009BD5FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BC2AD252122E3A1009BD5FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BC2AD282122E3A1009BD5FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BC2AD292122E3A1009BD5FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BC2AD2B2122E3A1009BD5FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-swift";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "GDTMobSample-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GDTMobSample-Swift/lib",
+					"$(PROJECT_DIR)/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq.gdt.GDTMobSample.swift.db;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "071e9f06-a481-46d5-9792-8bf0152abd64";
+				SWIFT_OBJC_BRIDGING_HEADER = "GDTMobSample-Swift/GDTMobSample-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BC2AD2C2122E3A1009BD5FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-swift";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "GDTMobSample-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GDTMobSample-Swift/lib",
+					"$(PROJECT_DIR)/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq.gdt.GDTMobSample.swift.db;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "071e9f06-a481-46d5-9792-8bf0152abd64";
+				SWIFT_OBJC_BRIDGING_HEADER = "GDTMobSample-Swift/GDTMobSample-Swift-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BED88C6212FDB4900BA176F /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = DailyBuild;
+		};
+		3BED88C7212FDB4900BA176F /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-swift";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tencent Technology (Shenzhen) Co., Ltd";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HKB8WPFBR9;
+				INFOPLIST_FILE = "GDTMobSample-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GDTMobSample-Swift/lib",
+					"$(PROJECT_DIR)/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq.gdt.GDTMobSample.swift.db;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "071e9f06-a481-46d5-9792-8bf0152abd64";
+				PROVISIONING_PROFILE_SPECIFIER = "071e9f06-a481-46d5-9792-8bf0152abd64";
+				SWIFT_OBJC_BRIDGING_HEADER = "GDTMobSample-Swift/GDTMobSample-Swift-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DailyBuild;
+		};
+		3BED88CA212FDBE800BA176F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3BED88CB212FDBE800BA176F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3BED88CC212FDBE800BA176F /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = DailyBuild;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BC2AD132122E3A0009BD5FD /* Build configuration list for PBXProject "GDTMobSample-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC2AD282122E3A1009BD5FD /* Debug */,
+				3BC2AD292122E3A1009BD5FD /* Release */,
+				3BED88C6212FDB4900BA176F /* DailyBuild */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC2AD2A2122E3A1009BD5FD /* Build configuration list for PBXNativeTarget "GDTMobSample-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC2AD2B2122E3A1009BD5FD /* Debug */,
+				3BC2AD2C2122E3A1009BD5FD /* Release */,
+				3BED88C7212FDB4900BA176F /* DailyBuild */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BED88C9212FDBE800BA176F /* Build configuration list for PBXAggregateTarget "dailybuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BED88CA212FDBE800BA176F /* Debug */,
+				3BED88CB212FDBE800BA176F /* Release */,
+				3BED88CC212FDBE800BA176F /* DailyBuild */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BC2AD102122E3A0009BD5FD /* Project object */;
+}

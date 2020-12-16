@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayableAdTestViewController">
+            <connections>
+                <outlet property="muteSwitch" destination="Hu1-RO-011" id="pyg-k1-JWH"/>
+                <outlet property="textField" destination="ggq-yr-Gnq" id="dIT-i9-M9B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggq-yr-Gnq">
+                    <rect key="frame" x="143" y="25" width="251" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Lmd-d5-SdZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="试玩广告地址：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRY-c1-RrS">
+                    <rect key="frame" x="20" y="32" width="123" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="gB1-CE-lYA"/>
+                        <constraint firstAttribute="width" constant="123" id="mvh-F3-eqQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hu1-RO-011">
+                    <rect key="frame" x="114" y="80" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="3np-my-8hE"/>
+                        <constraint firstAttribute="height" constant="31" id="F0G-i9-sp5"/>
+                    </constraints>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-St-yyy">
+                    <rect key="frame" x="85" y="203" width="245" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="展示广告"/>
+                    <connections>
+                        <action selector="showAdButtonTouched:" destination="-1" eventType="touchUpInside" id="uhX-9H-MbI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="输入正确的试玩广告地址并通过验证后，展示的激励视频广告会在视频播放完成后展示输入的试玩广告。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3x-Mj-R4v">
+                    <rect key="frame" x="20" y="256" width="374" height="76"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="静音播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAx-Br-rL3">
+                    <rect key="frame" x="20" y="85" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="1hc-54-WfL"/>
+                        <constraint firstAttribute="height" constant="21" id="skB-lY-EvB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MAx-Br-rL3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="CQW-d8-OgZ"/>
+                <constraint firstItem="MAx-Br-rL3" firstAttribute="top" secondItem="WRY-c1-RrS" secondAttribute="bottom" constant="32" id="Hot-9a-E2i"/>
+                <constraint firstItem="ggq-yr-Gnq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="WqT-cO-LwN"/>
+                <constraint firstItem="WRY-c1-RrS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="dX9-gC-Br4"/>
+                <constraint firstItem="Hu1-RO-011" firstAttribute="leading" secondItem="MAx-Br-rL3" secondAttribute="trailing" constant="24" id="hqf-Jh-UCj"/>
+                <constraint firstItem="ggq-yr-Gnq" firstAttribute="leading" secondItem="WRY-c1-RrS" secondAttribute="trailing" id="ksq-61-2Rr"/>
+                <constraint firstItem="WRY-c1-RrS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="urr-td-ucY"/>
+                <constraint firstItem="Hu1-RO-011" firstAttribute="top" secondItem="ggq-yr-Gnq" secondAttribute="bottom" constant="21" id="vhS-pt-duT"/>
+                <constraint firstAttribute="trailing" secondItem="ggq-yr-Gnq" secondAttribute="trailing" constant="20" id="z2m-xA-Qvg"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UnifiedNativeAdViewController">
+            <connections>
+                <outlet property="placementTextField" destination="st5-4p-Dt6" id="N2p-h0-dJz"/>
+                <outlet property="tableView" destination="VXj-BT-xZn" id="02E-5s-GRJ"/>
+                <outlet property="view" destination="xTy-pv-Fn7" id="9Dj-2o-wpQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xTy-pv-Fn7">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3050349752532954" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="st5-4p-Dt6">
+                    <rect key="frame" x="70" y="20" width="218" height="34"/>
+                    <accessibility key="accessibilityConfiguration" identifier="unifiedNative_pid"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VXj-BT-xZn">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bb-Fy-hbw">
+                    <rect key="frame" x="294" y="21" width="71" height="30"/>
+                    <state key="normal" title="换广告位"/>
+                    <connections>
+                        <action selector="selectADVStyle:" destination="-1" eventType="touchUpInside" id="yrD-7c-hGf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="广告位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CA2-YB-pi6">
+                    <rect key="frame" x="12" y="27" width="52" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="eKy-rx-e1u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4bb-Fy-hbw" firstAttribute="baseline" secondItem="st5-4p-Dt6" secondAttribute="baseline" id="1Cy-4b-N0v"/>
+                <constraint firstAttribute="trailing" secondItem="VXj-BT-xZn" secondAttribute="trailing" id="4f1-Lw-cgA"/>
+                <constraint firstAttribute="trailing" secondItem="4bb-Fy-hbw" secondAttribute="trailing" constant="10" id="BXF-vS-DeP"/>
+                <constraint firstItem="st5-4p-Dt6" firstAttribute="top" secondItem="xTy-pv-Fn7" secondAttribute="top" constant="20" id="Dfi-pi-B7g"/>
+                <constraint firstAttribute="bottom" secondItem="VXj-BT-xZn" secondAttribute="bottom" id="I6b-8K-MJU"/>
+                <constraint firstItem="VXj-BT-xZn" firstAttribute="top" secondItem="CA2-YB-pi6" secondAttribute="bottom" constant="13" id="PLT-UI-VvT"/>
+                <constraint firstItem="CA2-YB-pi6" firstAttribute="centerY" secondItem="st5-4p-Dt6" secondAttribute="centerY" id="TAb-3I-hej"/>
+                <constraint firstAttribute="trailingMargin" secondItem="st5-4p-Dt6" secondAttribute="trailing" constant="71" id="U3w-ne-4H0"/>
+                <constraint firstItem="st5-4p-Dt6" firstAttribute="leading" secondItem="xTy-pv-Fn7" secondAttribute="leadingMargin" constant="54" id="l0V-EG-KJY"/>
+                <constraint firstItem="VXj-BT-xZn" firstAttribute="leading" secondItem="xTy-pv-Fn7" secondAttribute="leading" id="lEs-Hs-4sc"/>
+                <constraint firstItem="st5-4p-Dt6" firstAttribute="leading" secondItem="CA2-YB-pi6" secondAttribute="trailing" constant="6" id="rbg-Tt-PxT"/>
+                <constraint firstItem="VXj-BT-xZn" firstAttribute="top" secondItem="st5-4p-Dt6" secondAttribute="bottom" constant="7" id="wHO-lT-ds6"/>
+                <constraint firstItem="4bb-Fy-hbw" firstAttribute="leading" secondItem="st5-4p-Dt6" secondAttribute="trailing" constant="6" id="yL8-70-vuA"/>
+            </constraints>
+            <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>

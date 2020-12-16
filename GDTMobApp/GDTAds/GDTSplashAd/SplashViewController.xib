@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController">
+            <connections>
+                <outlet property="logoDescLabel" destination="JYD-Gz-6Zh" id="ccC-D2-WPd"/>
+                <outlet property="logoHeightTextField" destination="NKK-vc-j51" id="5mb-yi-eBa"/>
+                <outlet property="placementIdTextField" destination="EQ6-Ao-DyV" id="rUI-St-yDK"/>
+                <outlet property="supportZoomoutViewSwitch" destination="LZ4-eJ-P1X" id="afm-XL-WKY"/>
+                <outlet property="tipsLabel" destination="ef5-Wx-6Di" id="ugb-04-4uB"/>
+                <outlet property="view" destination="Zdm-da-0UK" id="kqT-hl-KhS"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" id="Zdm-da-0UK" customClass="splashAdClosed">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="9040714184494018" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQ6-Ao-DyV">
+                    <rect key="frame" x="117" y="40.5" width="160" height="34"/>
+                    <accessibility key="accessibilityConfiguration" identifier="splash_pid"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告位id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqk-y1-Ozi">
+                    <rect key="frame" x="15" y="47.5" width="80" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Hvk-FH-WDm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="底部logo高度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0o-kM-bW0">
+                    <rect key="frame" x="15" y="88" width="120" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="3RK-W8-pqi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="200" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKK-vc-j51">
+                    <rect key="frame" x="157" y="81.5" width="202" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef5-Wx-6Di">
+                    <rect key="frame" x="50" y="412" width="273" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hub-vd-D7i">
+                    <rect key="frame" x="294" y="43" width="62" height="30"/>
+                    <state key="normal" title="换广告位"/>
+                    <connections>
+                        <action selector="changePlacementID:" destination="-1" eventType="touchUpInside" id="Edu-yk-rC7"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="开屏视频V+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ek-Nc-S2i">
+                    <rect key="frame" x="17" y="141" width="132" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LZ4-eJ-P1X">
+                    <rect key="frame" x="157" y="136" width="49" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="底部logo高度最大不超过屏幕高度的 25%" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYD-Gz-6Zh">
+                    <rect key="frame" x="17" y="163" width="345" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="wqV-qj-OKt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3TB-tV-cFU">
+                    <rect key="frame" x="16" y="222" width="345" height="1"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhb-zN-EmW">
+                    <rect key="frame" x="60" y="243" width="64" height="30"/>
+                    <state key="normal" title="拉取广告"/>
+                    <connections>
+                        <action selector="parallelLoadAd:" destination="-1" eventType="touchUpInside" id="4kC-tg-Mvf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFJ-rB-gOm">
+                    <rect key="frame" x="244" y="243" width="62" height="30"/>
+                    <state key="normal" title="展示广告"/>
+                    <connections>
+                        <action selector="parallelShowAd:" destination="-1" eventType="touchUpInside" id="Tr8-Xa-7Qu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsA-U4-eot">
+                    <rect key="frame" x="120" y="335" width="138" height="30"/>
+                    <accessibility key="accessibilityConfiguration" identifier="preLoad_ad_button_id"/>
+                    <state key="normal" title="合约闪屏广告预加载"/>
+                    <connections>
+                        <action selector="preloadContractSplashAd:" destination="-1" eventType="touchUpInside" id="BvQ-6d-TaH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tsA-U4-eot" firstAttribute="leading" secondItem="Zdm-da-0UK" secondAttribute="leading" constant="120" id="80k-0U-nuw"/>
+                <constraint firstItem="NKK-vc-j51" firstAttribute="leading" secondItem="c0o-kM-bW0" secondAttribute="trailing" constant="22" id="8Ob-cX-LJv"/>
+                <constraint firstItem="Mhb-zN-EmW" firstAttribute="leading" secondItem="Zdm-da-0UK" secondAttribute="leading" constant="60" id="9jT-Nv-ATx"/>
+                <constraint firstItem="NKK-vc-j51" firstAttribute="centerY" secondItem="c0o-kM-bW0" secondAttribute="centerY" id="9mZ-HY-x4f"/>
+                <constraint firstItem="c0o-kM-bW0" firstAttribute="leading" secondItem="Zdm-da-0UK" secondAttribute="leading" constant="15" id="B9a-Jw-FNK"/>
+                <constraint firstItem="JFJ-rB-gOm" firstAttribute="top" secondItem="JYD-Gz-6Zh" secondAttribute="bottom" constant="20" id="Bwa-oS-qdR"/>
+                <constraint firstAttribute="trailing" secondItem="tsA-U4-eot" secondAttribute="trailing" constant="117" id="Cvd-4g-Ks4"/>
+                <constraint firstItem="JYD-Gz-6Zh" firstAttribute="top" secondItem="c0o-kM-bW0" secondAttribute="bottom" constant="54" id="IZ8-mc-hbQ"/>
+                <constraint firstItem="EQ6-Ao-DyV" firstAttribute="leading" secondItem="Nqk-y1-Ozi" secondAttribute="trailing" constant="22" id="Mea-fL-WBV"/>
+                <constraint firstItem="EQ6-Ao-DyV" firstAttribute="top" secondItem="Zdm-da-0UK" secondAttribute="top" constant="40.5" id="NQL-DQ-AsT"/>
+                <constraint firstAttribute="trailing" secondItem="JFJ-rB-gOm" secondAttribute="trailing" constant="69" id="OcS-N0-bwI"/>
+                <constraint firstAttribute="trailing" secondItem="JYD-Gz-6Zh" secondAttribute="trailing" constant="13" id="Qtn-wR-agC"/>
+                <constraint firstAttribute="trailing" secondItem="Hub-vd-D7i" secondAttribute="trailing" constant="19" id="RWn-9V-wnA"/>
+                <constraint firstAttribute="trailing" secondItem="tsA-U4-eot" secondAttribute="trailing" constant="117" id="U02-fL-DF4"/>
+                <constraint firstItem="JFJ-rB-gOm" firstAttribute="leading" secondItem="Mhb-zN-EmW" secondAttribute="trailing" constant="120" id="Vs0-vK-oXD"/>
+                <constraint firstItem="EQ6-Ao-DyV" firstAttribute="leading" secondItem="Nqk-y1-Ozi" secondAttribute="trailing" constant="22" id="WK7-Ah-Xbd"/>
+                <constraint firstItem="Mhb-zN-EmW" firstAttribute="top" secondItem="JYD-Gz-6Zh" secondAttribute="bottom" constant="20" id="Z6o-xw-rEe"/>
+                <constraint firstItem="tsA-U4-eot" firstAttribute="top" secondItem="Mhb-zN-EmW" secondAttribute="bottom" constant="62" id="bz5-0h-QQ8"/>
+                <constraint firstItem="Hub-vd-D7i" firstAttribute="leading" secondItem="EQ6-Ao-DyV" secondAttribute="trailing" constant="17" id="ePu-Jf-eAk"/>
+                <constraint firstItem="EQ6-Ao-DyV" firstAttribute="centerY" secondItem="Nqk-y1-Ozi" secondAttribute="centerY" id="fdL-MM-uTi"/>
+                <constraint firstAttribute="trailing" secondItem="NKK-vc-j51" secondAttribute="trailing" constant="16" id="h7a-UY-lZp"/>
+                <constraint firstItem="c0o-kM-bW0" firstAttribute="top" secondItem="Nqk-y1-Ozi" secondAttribute="bottom" constant="20" id="hgG-OQ-tyH"/>
+                <constraint firstItem="Hub-vd-D7i" firstAttribute="top" secondItem="Zdm-da-0UK" secondAttribute="top" constant="43" id="jrY-qV-6lV"/>
+                <constraint firstItem="tsA-U4-eot" firstAttribute="leading" secondItem="Zdm-da-0UK" secondAttribute="leading" constant="120" id="nSd-s4-1HM"/>
+                <constraint firstItem="JFJ-rB-gOm" firstAttribute="leading" secondItem="Mhb-zN-EmW" secondAttribute="trailing" constant="120" id="pF5-WH-HIb"/>
+                <constraint firstItem="Nqk-y1-Ozi" firstAttribute="leading" secondItem="Zdm-da-0UK" secondAttribute="leading" constant="15" id="q9z-EK-vQL"/>
+                <constraint firstItem="JYD-Gz-6Zh" firstAttribute="leading" secondItem="Zdm-da-0UK" secondAttribute="leading" constant="17" id="sRC-XG-i72"/>
+                <constraint firstItem="Hub-vd-D7i" firstAttribute="leading" secondItem="EQ6-Ao-DyV" secondAttribute="trailing" constant="17" id="uPq-Nn-bhC"/>
+            </constraints>
+            <point key="canvasLocation" x="136.80000000000001" y="142.57871064467767"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>
